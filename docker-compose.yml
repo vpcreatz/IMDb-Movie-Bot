@@ -8,7 +8,7 @@ build:
 
   
 
-  frontend-dev: vpcreatz
+  frontend-dev: https://github.com/vpcreatz/
 
     context: .
 
