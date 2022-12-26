@@ -12,4 +12,6 @@ services:
      DATABASE_NAME: Cluster0
      LOG_CHANNEL: -1001894541844
      IMDB: True
-     IMDB: True
+     SINGLE_BUTTON: True
+     PICS: https://telegra.ph/file/2fb1fc7bb1735f44757fd.jpg
+     FILE_STORE_CHANNEL: -1001884256303
