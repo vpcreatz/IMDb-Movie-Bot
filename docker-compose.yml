@@ -1,39 +1,23 @@
-dependencies:
-
+build:
   frontend:
+    context: .
+    dockerfile: Dockerfile
+  
+  frontend-dev:
+    context: .
+    dockerfile: Dockerfile
+    target: dev
 
-    repository: https://github.com/vpcreatz/IMDb-Movie-Bot
+dependencies:
+  - https://github.com/okteto/movies-multi-repo
 
-    manifest: okteto.yml
+deploy:
+  - name: Deploy Frontend
+    command: helm upgrade --install movies-frontend chart --set image=${OKTETO_BUILD_FRONTEND_IMAGE}
 
-    branch: main
-
-    variables:
-
-     BOT_TOKEN: $BOT_TOKEN
-
-     API_ID: $API_ID
-
-     API_HASH: $API_HASH
-
-     CHANNELS: $CHANNELS
-
-     ADMINS: $ADMINS
-
-     DATABASE_URL: $DATABASE_URL
-
-     DATABASE_NAME: $DATABASE_NAME
-
-     LOG_CHANNEL: $LOG_CHANNEL
-
-     IMDB: $IMDB
-
-     SINGLE_BUTTON: $SINGLE_BUTTON
-
-     PICS: $PICS
-
-     FILE_STORE_CHANNEL: $FILE_STORE_CHANNEL
-
-      DEBUG: true
-
-    wait: true
+dev:
+  frontend:
+    image: ${OKTETO_BUILD_FRONTEND_DEV_IMAGE}
+    command: yarn start
+    sync:
+      - .:/src
