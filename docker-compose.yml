@@ -1,0 +1,39 @@
+dependencies:
+
+  frontend:
+
+    repository: https://github.com/vpcreatz/IMDb-Movie-Bot
+
+    manifest: okteto.yml
+
+    branch: main
+
+    variables:
+
+     BOT_TOKEN: $BOT_TOKEN
+
+     API_ID: $API_ID
+
+     API_HASH: $API_HASH
+
+     CHANNELS: $CHANNELS
+
+     ADMINS: $ADMINS
+
+     DATABASE_URL: $DATABASE_URL
+
+     DATABASE_NAME: $DATABASE_NAME
+
+     LOG_CHANNEL: $LOG_CHANNEL
+
+     IMDB: $IMDB
+
+     SINGLE_BUTTON: $SINGLE_BUTTON
+
+     PICS: $PICS
+
+     FILE_STORE_CHANNEL: $FILE_STORE_CHANNEL
+
+      DEBUG: true
+
+    wait: true
