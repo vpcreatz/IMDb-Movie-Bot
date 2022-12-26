@@ -3,15 +3,15 @@ services:
  worker:
    build:
    environment:
-     BOT_TOKEN: 5880821820:AAGdoNrEiWM63Kf6Id4hm1bpdi_-oCRyiBk
-     API_ID: 20960397
-     API_HASH: d68d847d3abb2087bf74f5d0683c2993
-     CHANNELS: -1001695882245
-     ADMINS: 1327973537
-     DATABASE_URL: mongodb+srv://vpcreatz:VPCREATION@cluster0.6lncjwt.mongodb.net/?retryWrites=true&w=majority
-     DATABASE_NAME: Cluster0
-     LOG_CHANNEL: -1001894541844
-     IMDB: True
-     SINGLE_BUTTON: True
-     PICS: https://telegra.ph/file/2fb1fc7bb1735f44757fd.jpg
-     FILE_STORE_CHANNEL: -1001884256303
+     BOT_TOKEN: $BOT_TOKEN
+     API_ID: $API_ID
+     API_HASH: $API_HASH
+     CHANNELS: $CHANNELS
+     ADMINS: $ADMINS
+     DATABASE_URL: $DATABASE_URL
+     DATABASE_NAME: $DATABASE_NAME
+     LOG_CHANNEL: $LOG_CHANNEL
+     IMDB: $IMDB
+     SINGLE_BUTTON: $IMDB
+     PICS: $IMDB
+     FILE_STORE_CHANNEL: $FILE_STORE_CHANNEL
