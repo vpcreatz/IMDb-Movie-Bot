@@ -3,3 +3,13 @@ services:
  worker:
    build:
    environment:
+     BOT_TOKEN: 5880821820:AAGdoNrEiWM63Kf6Id4hm1bpdi_-oCRyiBk
+     API_ID: 20960397
+     API_HASH: d68d847d3abb2087bf74f5d0683c2993
+     CHANNELS: -1001695882245
+     ADMINS: 1327973537
+     DATABASE_URL: mongodb+srv://vpcreatz:VPCREATION@cluster0.6lncjwt.mongodb.net/?retryWrites=true&w=majority
+     DATABASE_NAME: Cluster0
+     LOG_CHANNEL: -1001894541844
+     IMDB: True
+     IMDB: True
