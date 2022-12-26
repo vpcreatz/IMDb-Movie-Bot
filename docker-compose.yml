@@ -1,6 +1,6 @@
 version: 3.10.8
 services:
- worker:
+ worker: /IMDb-Movie-Bot
    build:
    environment:
      BOT_TOKEN: $BOT_TOKEN
