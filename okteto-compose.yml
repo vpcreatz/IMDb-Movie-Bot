@@ -1,0 +1,17 @@
+version: "3.10.8"
+services:
+  worker:
+    build: .
+    environment:
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - CHANNELS=${CHANNELS}
+      - ADMINS=${ADMINS}
+      - DATABASE_URL=${DATABASE_URL}
+      - DATABASE_NAME=${DATABASE_NAME}
+      - LOG_CHANNEL=${LOG_CHANNEL}
+      - IMDB=${IMDB}
+      - SINGLE_BUTTON=${SINGLE_BUTTON}
+      - PICS=${PICS}
+      - FILE_STORE_CHANNEL=${FILE_STORE_CHANNEL}
