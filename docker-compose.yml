@@ -14,7 +14,7 @@ build:
 
     dockerfile: Dockerfile
 
-    target: dev
+    target:
 
 dependencies:
 
