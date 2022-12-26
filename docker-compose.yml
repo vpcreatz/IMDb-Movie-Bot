@@ -8,7 +8,6 @@ build:
 
   
 
-  frontend-dev:
 
     context: .
 
