@@ -8,13 +8,13 @@ build:
 
   
 
-  frontend-dev:
+  frontend-dev: vpcreatz
 
     context: .
 
     dockerfile: Dockerfile
 
-    target:
+    target: vpcreatz
 
 dependencies:
 
